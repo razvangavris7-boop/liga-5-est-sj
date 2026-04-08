@@ -1,11 +1,13 @@
 package com.example.liga_5_est_sj
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.liga_5_est_sj.AccountHelper.checkPasswordMatch
 import com.example.liga_5_est_sj.databinding.FragmentRegisterBinding
 
 
@@ -33,8 +35,21 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+
+
+        binding.buttonRegister.setOnClickListener {
+            val newPassword = binding.editTextPassword.text.toString()
+            val confirmPassword = binding.editTextConfirmPassword.text.toString()
+            val confirmationText = binding.textPasswordConfirmationFailed
+
+            val isMatching = checkPasswordMatch(newPassword, confirmPassword)
+            if (!isMatching) {
+                confirmationText.text = "passwords does not match!"
+            } else {
+                confirmationText.text = "passwords match!"
+
+                findNavController().navigateUp()
+            }
         }
     }
 

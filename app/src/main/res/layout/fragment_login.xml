@@ -7,19 +7,18 @@
     tools:context=".LoginFragment">
 
 
-
         <TextView
             android:id="@+id/textview_welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="160dp"
             android:text="@string/welcome_message"
             android:textSize="30sp"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
             app:layout_constraintStart_toStartOf="parent"
 
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/edit_text_email"
@@ -85,6 +84,18 @@
             app:layout_constraintStart_toStartOf="parent"
 
             />
+
+        <ImageView
+            android:id="@+id/logo_aplicatie"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_aplicatie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"
+            />
+
 
 
 
