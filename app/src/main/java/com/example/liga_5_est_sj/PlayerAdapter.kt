@@ -48,14 +48,6 @@ class PlayerAdapter (
             TODO("Not yet implemented")
         }
 
-        override fun getView(
-            p0: Int,
-            p1: View?,
-            p2: ViewGroup?
-        ): View? {
-            TODO("Not yet implemented")
-        }
-
         override fun getViewTypeCount(): Int {
             TODO("Not yet implemented")
         }

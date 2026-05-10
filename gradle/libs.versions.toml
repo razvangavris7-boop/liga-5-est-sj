@@ -1,6 +1,6 @@
 [versions]
 googleServices = "4.4.4"
-playServicesAuth = "21.3.0"
+playServicesAuth = "21.5.1"
 agp = "9.0.1"
 coreKtx = "1.10.1"
 junit = "4.13.2"
@@ -12,10 +12,10 @@ constraintlayout = "2.1.4"
 navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
 activity = "1.8.0"
-firebaseBom = "34.11.0"
-firebaseAuth = "23.2.1"
-firebaseFirestore = "26.1.2"
-firebaseFirestoreVersion = "26.1.2"
+firebaseBom = "34.13.0"
+firebaseAuth = "24.1.0"
+firebaseFirestore = "26.3.0"
+firebaseFirestoreVersion = "26.3.0"
 
 [libraries]
 google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
